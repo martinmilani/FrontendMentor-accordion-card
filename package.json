@@ -1,0 +1,19 @@
+{
+  "name": "accordion-card",
+  "version": "1.0.0",
+  "description": "![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)",
+  "main": "postcss.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "postcss css/styles.css -o build/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": []
+}
