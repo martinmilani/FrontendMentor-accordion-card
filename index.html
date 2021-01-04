@@ -1,46 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .active {
+        font-weight: bold;
+      }
+
+      .active > img {
+        transform: rotate(180deg);
+      }
+
+      .panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+    </style>
+
+    <link rel="stylesheet" href="/build/styles.css" type="text/css" />
+  </head>
+  <body
+    class="pt-32 bg-gradient-to-b from-softViolet to-softBlue h-screen flex flex-col justify-center items-center sm:pt-0"
+  >
+    <div
+      class="rounded-3xl m-6 pt-1 pb-12  text-xs font-kumbhSans max-w-3xl sm:flex "
+    >
+      <img
+        class="pr-6 mx-auto -mt-28 sm:hidden"
+        src="/images/illustration-woman-online-mobile.svg"
+        alt=""
+      />
+
+    
+      <div class="hidden sm:block sm:w-1/2 sm:overflow-hidden sm:relative">
+        <img
+          class="sm:overflow-hidden object-contain relative top-20 right-16 z-30"
+          src="/images/illustration-woman-online-desktop.svg"
+          alt=""
+        />
+        <img class="absolute top-40 -left-24 z-40 overflow-visible"  src="/images/illustration-box-desktop.svg" alt="">
+      </div>
+
+      <img
+        class="mx-auto -mt-custom sm:hidden"
+        src="/images/bg-pattern-mobile.svg"
+        alt=""
+      />
+      
+
+      <article  class="sm:w-1/2 h-96 overflow-auto">
+
+        <h1 class="text-customXl font font-bold text-center mt-10 mb-10 sm:text-left sm:ml-6 sm:mt-12 sm:mb-10">FAQ</h1>
   
-  <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
-  <link rel="stylesheet" href="/build/styles.css" type="text/css" />
-
-</head>
-<body class="bg-gradient-to-b from-softViolet to-softBlue h-screen">
-  <div class="rounded-2xl  m-4 p-2 bg-white">
-    How many team members can I invite?
-    You can invite up to 2 additional users on the Free plan. There is no limit on 
-    team members for the Premium plan.
+        <div class="px-6 text-veryDarkGrayishBlue">
+          <button
+            class="accordion my-4 active:text-softRed flex w-full justify-between"
+          >
+            How many team members can I invite?
+            <img
+              class="object-contain"
+              src="/images/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="panel border-b border-lightGrayishBlue">
+            <p class="pb-4 text-darkGrayishBlue">
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </div>
   
-    What is the maximum file upload size?
-    No more than 2GB. All files in your account must fit your allotted storage space.
+          <button
+            class="accordion my-4 active:text-softRed flex w-full justify-between"
+          >
+            What is the maximum file upload size?
+            <img
+              class="object-contain"
+              src="/images/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="panel border-b border-lightGrayishBlue">
+            <p class="pb-4 text-darkGrayishBlue">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </div>
   
-    How do I reset my password?
-    Click “Forgot password” from the login page or “Change password” from your profile page.
-    A reset link will be emailed to you.
+          <button
+            class="accordion my-4 active:text-softRed flex w-full justify-between"
+          >
+            How do I reset my password?
+            <img
+              class="object-contain"
+              src="/images/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="panel border-b border-lightGrayishBlue">
+            <p class="pb-4 text-darkGrayishBlue">
+              Click “Forgot password” from the login page or “Change password”
+              from your profile page. A reset link will be emailed to you.
+            </p>
+          </div>
   
-    Can I cancel my subscription?
-    Yes! Send us a message and we’ll process your request no questions asked.
+          <button
+            class="accordion my-4 active:text-softRed flex w-full justify-between"
+          >
+            Can I cancel my subscription?
+            <img
+              class="object-contain"
+              src="/images/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="panel border-b border-lightGrayishBlue">
+            <p class="pb-4 text-darkGrayishBlue">
+              Yes! Send us a message and we’ll process your request no questions
+              asked.
+            </p>
+          </div>
   
-    Do you provide additional support?
-    Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          <button
+            class="accordion my-4 active:text-softRed flex w-full justify-between"
+          >
+            Do you provide additional support?
+            <img
+              class="object-contain"
+              src="/images/icon-arrow-down.svg"
+              alt=""
+            />
+          </button>
+          <div class="panel border-b border-lightGrayishBlue">
+            <p class="pb-4 text-darkGrayishBlue">
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </div>
+        </div>
+      </div>
+      </article>
 
-  </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
