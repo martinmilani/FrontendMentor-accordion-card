@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       height: {
         bigSize: "200%",
+        desktopSize: "450px",
       },
       colors: {
         veryDarkDesaturatedBlue: "#1d1e35",

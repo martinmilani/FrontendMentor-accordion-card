@@ -20,6 +20,7 @@
         font-size: 11px;
         text-align: center;
       }
+
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
@@ -45,7 +46,7 @@
     class="pt-32 bg-gradient-to-b from-softViolet to-softBlue h-screen flex flex-col justify-center items-center sm:pt-0"
   >
     <div
-      class="rounded-3xl m-6 pt-1 pb-12  text-xs font-kumbhSans max-w-3xl sm:flex "
+      class="rounded-3xl m-6 pt-1 text-xs font-kumbhSans max-w-4xl bg-white sm:flex "
     >
       <img
         class="pr-6 mx-auto -mt-28 sm:hidden"
@@ -54,13 +55,12 @@
       />
 
     
-      <div class="hidden sm:block sm:w-1/2 sm:overflow-hidden sm:relative">
-        <img
-          class="sm:overflow-hidden object-contain relative top-20 right-16 z-30"
-          src="/images/illustration-woman-online-desktop.svg"
-          alt=""
-        />
-        <img class="absolute top-40 -left-24 z-40 overflow-visible"  src="/images/illustration-box-desktop.svg" alt="">
+      <div class="hidden sm:block sm:w-1/2 sm:relative" 
+        style="background-image: url(/images/illustration-woman-online-desktop.svg), url(/images/bg-pattern-desktop.svg);  
+               background-repeat: no-repeat;  
+               background-size: 110%, 260% 190%; 
+               background-position: -60px center, -620px -270px;">
+        <img src="/images/illustration-box-desktop.svg" alt="" class="absolute top-44 -left-24">
       </div>
 
       <img
@@ -70,17 +70,17 @@
       />
       
 
-      <article  class="sm:w-1/2 h-96 overflow-auto">
+      <article  class="sm:w-1/2 sm:pr-10 h-desktopSize overflow-auto">
 
         <h1 class="text-customXl font font-bold text-center mt-10 mb-10 sm:text-left sm:ml-6 sm:mt-12 sm:mb-10">FAQ</h1>
   
         <div class="px-6 text-veryDarkGrayishBlue">
           <button
-            class="accordion my-4 active:text-softRed flex w-full justify-between"
+            class="accordion my-4 active:text-softRed focus:outline-none flex w-full justify-between"
           >
             How many team members can I invite?
             <img
-              class="object-contain"
+              class="object-contain sm:mr-4"
               src="/images/icon-arrow-down.svg"
               alt=""
             />
@@ -93,11 +93,11 @@
           </div>
   
           <button
-            class="accordion my-4 active:text-softRed flex w-full justify-between"
+            class="accordion my-4 active:text-softRed focus:outline-none flex w-full justify-between"
           >
             What is the maximum file upload size?
             <img
-              class="object-contain"
+              class="object-contain sm:mr-4"
               src="/images/icon-arrow-down.svg"
               alt=""
             />
@@ -110,11 +110,11 @@
           </div>
   
           <button
-            class="accordion my-4 active:text-softRed flex w-full justify-between"
+            class="accordion my-4 active:text-softRed focus:outline-none flex w-full justify-between"
           >
             How do I reset my password?
             <img
-              class="object-contain"
+              class="object-contain sm:mr-4"
               src="/images/icon-arrow-down.svg"
               alt=""
             />
@@ -127,11 +127,11 @@
           </div>
   
           <button
-            class="accordion my-4 active:text-softRed flex w-full justify-between"
+            class="accordion my-4 active:text-softRed focus:outline-none flex w-full justify-between"
           >
             Can I cancel my subscription?
             <img
-              class="object-contain"
+              class="object-contain sm:mr-4"
               src="/images/icon-arrow-down.svg"
               alt=""
             />
@@ -144,11 +144,11 @@
           </div>
   
           <button
-            class="accordion my-4 active:text-softRed flex w-full justify-between"
+            class="accordion my-4 active:text-softRed focus:outline-none flex w-full justify-between"
           >
             Do you provide additional support?
             <img
-              class="object-contain"
+              class="object-contain sm:mr-4"
               src="/images/icon-arrow-down.svg"
               alt=""
             />
@@ -163,11 +163,11 @@
       </div>
       </article>
 
-    <div class="attribution">
+    <div class="attribution text-gray-400">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Martin Milani</a>.
     </div>
 
     <script>
